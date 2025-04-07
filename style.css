@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-image: url(./R.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+header h1{
+    color: blue;
+    text-align: center;
+    font-size: 3rem;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    gap: 1em;
+    margin: 1em;
+    min-height: 20em;
+}
+
+main .card{
+    background-color: hotpink;
+    min-width: 5em; 
+}
+
+main .first{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+    padding: 0.5em;
+}
+
+main .first img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    border-radius: 1em;
+}
+
+main .second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    color: rgb(233, 233, 233);
+    gap: 0.5em;
+}
+
+main .third{
+    padding: 1em;
+}
+
+main .third ol{
+    margin-left: 1em;
+}
+
+@media (max-width: 1000px) {
+	main {
+        display: flex;
+		flex-direction: column;
+	}
+}
