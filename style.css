@@ -25,6 +25,7 @@ main{
     min-height: 20em;
 }
 
+
 main .card{
     background-color: hotpink;
     min-width: 5em; 
@@ -64,8 +65,10 @@ main .third ol{
 }
 
 @media (max-width: 1000px) {
+
 	main {
         display: flex;
 		flex-direction: column;
 	}
+
 }
